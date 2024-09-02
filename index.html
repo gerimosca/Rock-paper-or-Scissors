@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="play-container">
+      <div class="score-container">
+        <div class="div-score">
+          <p class="score">User Score</p>
+          <span class="number" id="userscore">0</span>
+        </div>
+        <div class="name">
+          <p class="title" id="titlegame">
+            ROCK <br />
+            PAPER <br />
+            SCISSORS
+          </p>
+        </div>
+        <div class="div-score">
+          <p class="score">PC Score</p>
+          <span class="number" id="pcscore">0</span>
+        </div>
+      </div>
+      <div class="icons-container">
+        <img class="triangle" src="./assets/images/bg-triangle.svg" alt="triangle_icon" />
+        <div id="game-icons">
+          <div class="color1">
+            <div class="icon">
+              <button class="img" data-button="paper">
+                <img src="./assets/images/icon-paper.svg" class="icon__img" alt="paper_icon" />
+              </button>
+            </div>
+          </div>
+          <div class="color2">
+            <div class="icon">
+              <button class="img" data-button="scissors">
+                <img src="./assets/images/icon-scissors.svg" class="icon__img" alt="scissor_icon" />
+              </button>
+            </div>
+          </div>
+          <div class="color3">
+            <div class="icon">
+              <button class="img" data-button="rock">
+                <img src="./assets/images/icon-rock.svg" class="icon__img" alt="rock_icon" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="picked" id="pickedme">YOU PICKED:</p>
+      <p class="picked" id="pickedpc">PC PICKED:</p>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
